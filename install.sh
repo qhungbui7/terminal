@@ -5,6 +5,13 @@
 # =============================================================================
 set -euo pipefail
 
+# Ensure script is executed, not sourced
+if [[ "${BASH_SOURCE[0]}" != "$0" ]]; then
+  echo "Error: This script should be executed, not sourced."
+  echo "Usage: bash install.sh"
+  return 1
+fi
+
 BOLD="\033[1m"
 GREEN="\033[0;32m"
 YELLOW="\033[1;33m"

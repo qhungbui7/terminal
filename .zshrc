@@ -181,7 +181,7 @@ if command -v eza &>/dev/null; then
   alias ll="eza -alh --icons --group-directories-first"
   alias lt="eza --tree --level=2 --icons"
 else
-  alias ls="ls --color=auto"
+  alias ls="ls -G"
   alias ll="ls -alh"
 fi
 
@@ -292,7 +292,7 @@ ff() {
 }
 
 # Quickly find directories
-fd() {
+fdir() {
   find . -type d -iname "*$1*"
 }
 
@@ -308,7 +308,7 @@ fs() {
   else
     local arg=-sh
   fi
-  if [[ -n "$@" ]]; then
+  if [[ $# -gt 0 ]]; then
     du $arg -- "$@"
   else
     du $arg .[^.]* ./*

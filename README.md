@@ -11,7 +11,7 @@ tailored for macOS (Apple Silicon & Intel).
 | **Plugins** | git · macos · brew · docker · kubectl · node · npm · python · z · fzf integration |
 | **Custom plugins** | zsh-autosuggestions · zsh-syntax-highlighting · zsh-history-substring-search |
 | **Aliases** | Navigation, Git, Docker, macOS utilities (Finder, DNS, lock screen, Trash) |
-| **Functions** | `mkcd`, `ex` (extract any archive), `ff`/`fd` (find files/dirs), `weather`, `serve` |
+| **Functions** | `mkcd`, `ex` (extract any archive), `ff`/`fdir` (find files/dirs), `weather`, `serve` |
 | **Tool integrations** | Homebrew, nvm, pyenv, rbenv, fzf, thefuck – loaded only when present |
 | **History** | 50 000 entries, shared across sessions, duplicate-free |
 | **Completions** | Case-insensitive, coloured, menu-select, cached |
